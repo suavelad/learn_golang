@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+	a := 6
+	b := &a
+
+	fmt.Println(a, b)
+	fmt.Printf("%T\n", b)
+
+	// Use * to read val from address
+	fmt.Println(*b)
+
+	// Change value of a pointer
+	*b = 10
+
+	fmt.Println(a)
+
+}
